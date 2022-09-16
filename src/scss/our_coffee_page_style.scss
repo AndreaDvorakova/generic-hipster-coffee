@@ -1,5 +1,9 @@
 $lightgrey: #eff1f1;
 $darkgrey:#33393f;
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $darkgrey;
+}
 .navigation {
     background-color: #EFF1F1;
     display: flex;
@@ -111,18 +115,19 @@ font-size:16px;}
     &__logo {
     margin-left: 0%;
             }
-        }
-    &__list{
-        display: flex;
+        &__list {
+            display: flex;
             flex-direction: row;
             list-style: none;
             justify-content: space-between;
-            margin-right: 10%; 
+            margin-right: 10%;
             width: 90%;
-           font-size: 1em; 
+            font-size: 1em;
             align-items: center;
             align-content: flex-end;
             margin-right: 10%;
-    }    
+        }
+        }
+    
 
 }
