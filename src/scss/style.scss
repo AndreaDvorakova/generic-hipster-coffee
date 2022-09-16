@@ -12,7 +12,10 @@ html {
   margin: 0;
   padding: 0;
   color: #33393f;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
+
+$darkgrey: #33393f;
 
 .container {
   display: flex;
@@ -56,6 +59,18 @@ html {
 }
 
 // headlines-header styling
+.header {
+  h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
 
 // homeimage styling
 
@@ -69,10 +84,72 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  &__headline {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__paragraph {
+    line-height: 1em;
+  }
 }
 
 // map of the address styling
 .map iframe {
   width: 100%;
   text-align: center;
+  margin-bottom: -5%;
+}
+
+a {
+  color: blue;
+  &:hover {
+    color: white;
+  }
+}
+footer {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $darkgrey;
+  color: white;
+  nav {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+  }
+  .navigation {
+    flex-direction: column;
+    &__logo {
+      margin-left: 0%;
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 1%;
+      width: 90%;
+    }
+  }
+
+  .homeimage img {
+    max-width: 100%;
+  }
+  .info {
+    flex-direction: column;
+  }
 }
