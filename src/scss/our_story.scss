@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: #33393f;
+}
+
+$darkgrey: #33393f;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+// navigation styling
+
+.navigation {
+  background-color: #eff1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    width: 5.5em;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 10%;
+    width: 30%;
+    font-size: 1em;
+  }
+  &__item a {
+    text-decoration: none;
+    color: #838484;
+    &:hover {
+      color: #33393f;
+    }
+  }
+}
+
+// container our story styling
+
+.story {
+  &__headline {
+    font-size: 2.5em;
+  }
+  &__paragraph {
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+}
+
+// form styling
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    input {
+      width: 40%;
+      border: none;
+      border-bottom: solid 1px lighten($darkgrey, 50%);
+      padding: 1%;
+      margin: 1%;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    input {
+      width: 40%;
+      border: none;
+      border-bottom: solid 1px lighten($darkgrey, 50%);
+      padding: 1%;
+      margin: 1%;
+      margin-bottom: 3%;
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    label {
+      color: $darkgrey;
+      font-size: 1.25em;
+      color: $darkgrey, 50%;
+      margin-bottom: 1%;
+    }
+    button {
+      margin-top: 1%;
+      margin-bottom: 1%;
+      padding: 1%;
+      border: solid 1px lighten($darkgrey, 50%);
+      border-radius: 10px;
+    }
+  }
+  textarea {
+    border: solid 1px lighten($darkgrey, 50%);
+    border-radius: 10px;
+  }
+}
+
+// image styling
+
+.container-about__image img {
+  width: 100%;
+  margin-bottom: -5%;
+}
+
+// footer styling
+a {
+  color: blue;
+  &:hover {
+    color: white;
+  }
+}
+footer {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $darkgrey;
+  color: white;
+  nav {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
