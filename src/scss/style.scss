@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: #33393f;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+// navigation styling
+
+.navigation {
+  background-color: #eff1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    width: 5.5em;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 10%;
+    width: 30%;
+    font-size: 1em;
+  }
+  &__item a {
+    text-decoration: none;
+    color: #838484;
+    &:hover {
+      color: #33393f;
+    }
+  }
+}
+
+// headlines-header styling
+
+// homeimage styling
+
+.homeimage img {
+  max-width: 100%;
+}
+
+// address, opening hours styling
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+// map of the address styling
+.map iframe {
+  width: 100%;
+  text-align: center;
+}
