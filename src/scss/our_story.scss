@@ -12,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
   color: #33393f;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
 
 $darkgrey: #33393f;
@@ -62,6 +63,8 @@ $darkgrey: #33393f;
 .story {
   &__headline {
     font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 300;
   }
   &__paragraph {
     font-size: 1em;
@@ -111,6 +114,8 @@ $darkgrey: #33393f;
       font-size: 1.25em;
       color: $darkgrey, 50%;
       margin-bottom: 1%;
+      text-transform: uppercase;
+      font-weight: 300;
     }
     button {
       margin-top: 1%;
