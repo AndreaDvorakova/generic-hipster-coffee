@@ -1,26 +1,5 @@
 $lightgrey: #eff1f1;
 $darkgrey:#33393f;
-a{color:blue;
-&:hover{
-    color:white;
-}
-}
-footer {
-    padding:5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $darkgrey;
-    color:white;
-    nav{font-size:1em}
-    h3{font-size:1.25em;}
-}
-.footer__text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .navigation {
     background-color: #EFF1F1;
     display: flex;
@@ -54,26 +33,71 @@ footer {
         }
     }
 }
+
+a{color:blue;
+&:hover{
+    color:white;
+}
+}
+
+footer {
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $darkgrey;
+    color:white;
+    nav{font-size:1em}
+    h3{font-size:1.25em;}
+}
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page__text{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left:11%;
-    margin-right:10%;
+    width:80%;
+    margin:0 auto;
 }
 .card__section{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    margin-right:10%;
-    margin-left:10%;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
 }
 .coffee__card{
     display:flex;
     flex-direction: column;
-    width:38%;
-    padding:5%;
+    width:48%;
     background-color: $lightgrey;
     margin:1%;
-    
+    h2{
+        border-bottom: 1px solid lighten($darkgrey,50%);
+        font-size: 24px;
+    }
+}
+.tasting__notes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flavour{font-style: italic;
+font-size:16px;}
+
+@media screen and (max-width: 480px){
+    .card__section{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .coffee__card{width:90%;}
+
 }
