@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/our_coffee_page_style.css">  
+    <link rel="stylesheet" href="css/our_coffee_page_style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <nav class="navigation">
+    
+        <nav class="navigation">
         <div class="navigation__logo"><img src="img/logo.svg" alt="logo" /></div>
         <ul class="navigation__list">
             <li class="navigation__item"><a href="/index.html">Home</a></li>
@@ -16,8 +19,10 @@
             <li class="navigation__item"><a href="/our_coffee_page.html">Coffee</a></li>
             <li class="navigation__item"><a href="/our_story.html">Our Story</a></li>
         </ul>
+    
     </nav>
-   <div class="page__text">
+   <!-- text section of the page --> 
+    <div class="page__text">
      <h1> Coffee</h1>
         <p> We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never
             boring. We bring you the best from leading european specialty roasteries, currently mostly from <a href=https://shop.squaremilecoffee.com>Square Mile Coffee
@@ -27,57 +32,83 @@
         You can currently buy these beans in 350g bags
         </p>
    </div>
+   <!-- container for all coffee cards-->
    <div class="card__section">
+    <!-- Individual Coffee Cards-->
     <div class="coffee__card card__one">
-        <h2> Quejina (Guatemala)</h2>
+        <div class=card__header>
+           <h2> Quejina (Guatemala)</h2>
+        </div>
         <img src="img/smcr-quejina.jpg" alt="a bag of coffee">
         <p class="bag__info">
             You can currently buy these beans in 350g bags
         </p>
-        <p class="tasting__notes">
-            Fruity redcurrant and sweet honeysuckle flavours. An incredibly juicy coffee which we struggled to decide on the right
+        <div class="tasting__notes">
+            <p class="flavour">
+                redcurrant/honeysuckle/juicy.
+            </p>
+            <p class="origin">
+            Fruity redcurrant and sweet honeysuckle flavours.An incredibly juicy coffee which we struggled to decide on the right
             berry descriptor, but raspberry, blackberry and blueberry were also in the running!
-        </p>        
+            </p>        
+        </div>
     </div>
     <div class="coffee__card card__two">
+        <div class="card__header">
         <h2> Mormora (Ethiopia)</h2>
+        </div>
         <img src="img/smcr-kamwangi.jpg" alt="a bag of coffee">
         <p class="bag__info">
             You can currently buy these beans in 350g bags
         </p>
-        <p class="tasting__notes">
-            blackberry/orange/silky
-            Fruity, sweet notes of dried mango, strawberry and passionfruit sit alongside a delicious creamy mouthfeel making this a
-            tasty summer Ethiopian, hot or cold.
-        </p>
+            <div class="tasting__notes">
+                <p class="flavour">
+                    blackberry/orange/silky
+                </p>
+                <p class="origin">
+                    Fruity, sweet notes of dried mango, strawberry and passionfruit sit alongside a delicious creamy mouthfeel making this a
+                    tasty summer Ethiopian, hot or cold.
+                </p>
+            </div>
     </div>
     <div class="coffee__card card__three">
+        <div class="card__header">
         <h2> Kamwangi (Kenya)</h2>
+        </div>
         <img src="img/smcr-mormora.jpg" alt="a bag of coffee">
         <p class="bag__info">
             You can currently buy these beans in 350g bags 
         </p>
-        <p class="tasting__notes">
-            blackberry/orange/silky
-            This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the
-            black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body.
-        </p>
+            <div class="tasting__notes">
+                <p class="flavour"> 
+                    blackberry/orange/silky
+                </p>
+                    <p class="origin">
+                        This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the
+                        black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body.
+                    </p>
+            </div>
     </div>
     <div class="coffee__card card__four">
-        <h2> Decaff Espresso (El Salvador)</h2>
-        <img src="img/smcr-decaf-espresso.jpg" alt="a bag of coffee">
+        <div class="card__header">
+            <h2> Decaff (El Salvador)</h2>
+        </div>
+            <img src="img/smcr-decaf-espresso.jpg" alt="a bag of coffee">
         <p class="bag__info"> You can currently buy these beans in 350g bags   
         </p>
-        <p class="tasting__notes"> 
-            caramel/apple/cinnamon
-            This is a single origin espresso from San Carlos in El Salvador, think sweet caramel and apple notes alongside
-            sprinklings of cinnamon in the finish.
-        </p>
+        <div class="tasting__notes"> 
+            <p class="flavour">
+                caramel/apple/cinnamon
+            </p>
+            <p class="origin">This is a single origin espresso from San Carlos in El Salvador, think sweet caramel and apple notes alongside
+            sprinklings of cinnamon in the finish.</p>
+        </div>
     </div>
    </div>
+   <!-- beginning of footer section-->
    <footer>
     <div class="footer__navbar">
-        <nav class="nav__footer"> <a href=""> Home</a> <a href=""> Menu</a> <a href="our_coffee_page.html"> Coffee</a> <a href=""> Our Story</a></nav>
+        <nav class="nav__footer"> <a href="/index.html"> Home</a> <a href=""> Menu</a> <a href="/our_coffee_page.html"> Coffee</a> <a href="/our_story.html"> Our Story</a></nav>
     </div>
     <div class="footer__text">
         <h3 class="hashtag">#HIPSTERSMAKECOFFEE</h3>
