@@ -38,10 +38,8 @@ html{
     }
 }
 
-a{color:blue;
-&:hover{
-    color:white;
-}
+a{
+    color:blue;
 }
 
 footer {
@@ -54,6 +52,11 @@ footer {
     color:white;
     nav{font-size:1em}
     h3{font-size:1.25em;}
+        a {
+            &:hover {
+                color: white;
+            }
+        }
 }
 .footer__text{
     display: flex;
@@ -67,6 +70,11 @@ footer {
     justify-content: flex-end;
     width:80%;
     margin:0 auto;
+    a {
+      &:hover {
+                color: $darkgrey;
+            }
+        }
 }
 .card__section{
     display:flex;
